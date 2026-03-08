@@ -1,0 +1,8 @@
+name: kuairec_drr
+seed: 123
+data:
+  transitions_path: data/processed/kuairec_small/transitions.parquet
+  interactions_path: data/processed/kuairec_small/interactions.parquet
+train:
+  lr: 0.001
+  batch_size: 256
