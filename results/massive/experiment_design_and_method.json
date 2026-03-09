@@ -1,0 +1,113 @@
+{
+  "what_are_you_doing": {
+    "ranking_benchmarks": {
+      "methods": [
+        "popularity",
+        "mf",
+        "ncf"
+      ],
+      "grid": {
+        "dims": [
+          16,
+          64
+        ],
+        "lrs": [
+          0.001,
+          0.0005
+        ],
+        "epochs": [
+          2,
+          4
+        ],
+        "seeds": [
+          11,
+          22,
+          33
+        ]
+      },
+      "splits": [
+        "val",
+        "test"
+      ]
+    },
+    "rl_benchmarks": {
+      "method": "drr",
+      "grid": {
+        "lrs": [
+          0.001,
+          0.0005,
+          0.002
+        ],
+        "batch_sizes": [
+          64,
+          128,
+          256
+        ],
+        "seeds": [
+          11,
+          22,
+          33,
+          44,
+          55
+        ]
+      },
+      "eval_grid": [
+        {
+          "num_episodes": 50,
+          "horizon": 20
+        },
+        {
+          "num_episodes": 100,
+          "horizon": 50
+        },
+        {
+          "num_episodes": 200,
+          "horizon": 100
+        }
+      ]
+    },
+    "ope_benchmarks": {
+      "estimators": [
+        "IPS",
+        "SNIPS",
+        "DR"
+      ],
+      "dataset_sizes": [
+        500,
+        1000,
+        2500,
+        5000
+      ],
+      "mismatch_scales": [
+        0.5,
+        1.0,
+        2.0
+      ],
+      "clips": [
+        1e-06,
+        0.0001,
+        0.001,
+        0.01,
+        0.05,
+        0.1
+      ],
+      "bootstrap_samples": 200
+    }
+  },
+  "how_to_solve": {
+    "pipeline": [
+      "Generate/prepare benchmark-ready datasets",
+      "Train ranking models across hyperparameter x seed sweeps",
+      "Evaluate ranking on candidate pools",
+      "Train and evaluate RL agent across sweep",
+      "Run OPE diagnostics with clipping and bootstrap CIs",
+      "Persist every run plus aggregate summaries"
+    ],
+    "notes": "Current run uses synthetic benchmark-compatible datasets because real datasets were not provided in workspace."
+  },
+  "counts": {
+    "ranking_runs": 48,
+    "drr_eval_runs": 135,
+    "ope_runs": 72
+  }
+}

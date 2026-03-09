@@ -1,0 +1,16 @@
+{
+  "base_dir": "/Users/andy/reinforcement_survey/results/massive",
+  "key_files": [
+    "ranking_sweep_all_runs.csv",
+    "ranking_sweep_summary.csv",
+    "popularity_metrics.csv",
+    "drr_sweep_all_runs.csv",
+    "drr_sweep_summary.csv",
+    "ope_clip_bootstrap_sweep.csv",
+    "ope_summary.csv",
+    "all_results_unified.csv",
+    "all_results_unified.json",
+    "experiment_design_and_method.json",
+    "experiment_design_and_method.md"
+  ]
+}

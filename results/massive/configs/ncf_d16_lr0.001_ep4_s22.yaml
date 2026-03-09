@@ -1,0 +1,13 @@
+name: ncf_d16_lr0.001_ep4_s22
+seed: 22
+data:
+  train_path: data/processed/movielens1m/train.parquet
+  val_candidates_path: data/processed/movielens1m/val_candidates.json
+  test_candidates_path: data/processed/movielens1m/test_candidates.json
+model:
+  name: ncf
+  dim: 16
+train:
+  epochs: 4
+  lr: 0.001
+  batch_size: 1024

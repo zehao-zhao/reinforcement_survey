@@ -1,0 +1,3 @@
+exp_name,family,model,split,precision@5,recall@5,ndcg@5,precision@10,recall@10,ndcg@10,precision@20,recall@20,ndcg@20
+popularity_baseline,ranking,popularity,val,0.012,0.06,0.031232126232897013,0.01,0.1,0.04437686988833708,0.009,0.18,0.06542759855674679
+popularity_baseline,ranking,popularity,test,0.012,0.06,0.041232126232897015,0.008,0.08,0.047898792899563676,0.008,0.16,0.06730637768394389

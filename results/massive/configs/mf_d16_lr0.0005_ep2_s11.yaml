@@ -1,0 +1,13 @@
+name: mf_d16_lr0.0005_ep2_s11
+seed: 11
+data:
+  train_path: data/processed/movielens1m/train.parquet
+  val_candidates_path: data/processed/movielens1m/val_candidates.json
+  test_candidates_path: data/processed/movielens1m/test_candidates.json
+model:
+  name: mf
+  dim: 16
+train:
+  epochs: 2
+  lr: 0.0005
+  batch_size: 1024

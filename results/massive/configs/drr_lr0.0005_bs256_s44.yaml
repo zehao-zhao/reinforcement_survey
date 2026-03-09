@@ -1,0 +1,8 @@
+name: drr_lr0.0005_bs256_s44
+seed: 44
+data:
+  transitions_path: data/processed/kuairec_small/transitions.parquet
+  interactions_path: data/processed/kuairec_small/interactions.parquet
+train:
+  lr: 0.0005
+  batch_size: 256

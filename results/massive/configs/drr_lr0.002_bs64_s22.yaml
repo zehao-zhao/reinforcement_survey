@@ -1,0 +1,8 @@
+name: drr_lr0.002_bs64_s22
+seed: 22
+data:
+  transitions_path: data/processed/kuairec_small/transitions.parquet
+  interactions_path: data/processed/kuairec_small/interactions.parquet
+train:
+  lr: 0.002
+  batch_size: 64
